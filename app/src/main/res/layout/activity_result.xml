@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Result">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:fontFamily="@font/shouter"
+        android:textColor="@color/times2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Congratulations!"
+        android:textSize="44sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:fontFamily="@font/shouter"
+        android:textColor="@color/times2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="your final score is"
+        android:textSize="44sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="19dp" />
+    <TextView
+        android:id="@+id/finalScoreTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/shouter"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:text="0 points" />
+    <TextView
+        android:id="@+id/highScoreTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/shouter"
+        android:textColor="@color/fade_red"
+        android:textSize="30sp"
+        android:text="high score: 0" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginStart="40dp"
+            android:id="@+id/retryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/highlight2"
+            android:fontFamily="@font/shouter"
+            android:textColor="@color/times2"
+            android:textSize="25sp"
+            android:layout_weight="0.7"
+            android:text="Play Again" />
+
+        <Space
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <Button
+            android:layout_marginEnd="50dp"
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/shouter"
+            android:backgroundTint="@color/highlight1"
+            android:textColor="@color/times2"
+            android:text="Main Menu" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="58dp" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/edResIV"
+        android:layout_width="232dp"
+        android:layout_height="228dp"
+        app:srcCompat="@drawable/edmultiply" />
+</LinearLayout>
